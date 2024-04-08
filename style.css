@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #53354A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    background-color: #E84545;
+    height:60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px #2B2E4A ;
+}
+.title{
+    font-size: 2.5rem;
+    font-family: "MedievalSharp", cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+.selections{
+    margin-top: 10px;
+    width: 92%;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+}
