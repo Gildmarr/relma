@@ -7,13 +7,64 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="nav">
-        <h1 class="title">Relma DM tool</h1>
+        <h1 class="title">Relma DM tool</h1> 
     </div>
-    <div class="selections"></div>
+    <div class="selection1">
+        
+        <h3 class="titolo1">Calcolo Viaggio</h3>
+       
+        <form>
+            <label for="scala">Scala<br></label>
+            <select name="scala" id="scala">
+              <option value="nazionale">Nazionale</option>
+              <option value="provinciale">Provinciale</option>
+              <option value="continentale">Continentale</option>
+            </select><br>
 
+            <label for="fname">Caselle da viaggiare:</label><br>
+            <input type="text" id="caselle" name="fname"><br>
+            
+            <label for="mezzo">Seleziona mezzo <br></label>
+            <select name="mezzo" id="mezzo">
+              <option value="carovana">Carovana</option>
+              <option value="carrozza">Carrozza su strada</option>
+              <option value="marcia_pianura">Marcia in pianura</option>
+              <option value="marcia_collina">Marcia in collina</option>
+              <option value="marcia_mont_med">Marcia media montagna</option>
+              <option value="marcia_mont_alt">Carrozza su strada</option>
+              <option value="cavallo_pianura">Cavallo in pianura</option>
+              <option value="cavallo_mont_alt">Cavallo alta montagna</option>
+              <option value="piccola_imb">Piccola imbarcazione</option>
+              <option value="vela">Vela</option>
+              <option value="vela_elf">Vela elfica</option>
+              <option value="vascello">Vascello</option>
+              <option value="cav_aerea">Caval. aerea</option>
+              <option value="cav_aerea_vel">Caval. aerea veloce</option>
+            </select><br>
+            
+            <label for="lname" >Km percorsi</label><br>
+            <input type="text" id="km" name="lname" readonly><br>
+            <label for="lname" >Tempo di viaggio in ore</label><br>
+            <input type="text" id="ore" name="lname" readonly><br>
+            <label for="lname" >Tempo di viaggio in giorni</label><br>
+            <input type="text" id="giorni" name="lname" readonly><br>
+            
+            
+            
+            <div class="btn_viaggio">
+                <button id="btn_viaggio" type="button" onclick="calc()";>calcola</button>
+            </div>
+            
+           
+        </form>
+
+    </div>
+    
+<script src="index.js"></script>
 </body>
 </html>

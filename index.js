@@ -30,166 +30,400 @@ function calc(){
     var mezzo = document.getElementById("mezzo").value;
 
     if (scala==="provinciale"){
+        var km = document.getElementById("km").value= scala_prov * casella;
         switch(mezzo){
                 case 'carovana':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
-                    
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/carovana;
+                    var ore = document.getElementById("ore").value=(Math.round((km/carovana) * 100) / 100).toFixed(2);
                     
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value = (Math.round((ore/8) * 100) / 100).toFixed(2);
                     
                 break;
 
                 case 'carrozza':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/carrozza_strada;
+                    var ore = document.getElementById("ore").value=(Math.round((km/carrozza_strada) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_pianura':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
-                    //ore impiegate
-                    var ore = document.getElementById("ore").value= km/marcia_pian;
-                    //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                   //ore impiegate
+                   var ore = document.getElementById("ore").value=(Math.round((km/marcia_pian) * 100) / 100).toFixed(2);
+                    
+                   //giorni impiegati
+                   
+                   document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_collina':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/marcia_coll;
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_coll) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_mont_med':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/marcia_mont_med;
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_mont_med) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_mont_alt':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/marcia_mont_alt;
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_mont_alt) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cavallo_pianura':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/cavallo_pianura;
+                    var ore = document.getElementById("ore").value=(Math.round((km/cavallo_pianura) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cavallo_mont_alt':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/cavallo_mont_alt;
+                    var ore = document.getElementById("ore").value=(Math.round((km/cavallo_mont_alt) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'piccola_imb':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/piccola_imb;
+                    var ore = document.getElementById("ore").value=(Math.round((km/piccola_imb) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vela':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/vela;
+                    var ore = document.getElementById("ore").value=(Math.round((km/vela) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vela_elf':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/vela_elf;
+                    var ore = document.getElementById("ore").value=(Math.round((km/vela_elf) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vascello':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/vascello;
+                    var ore = document.getElementById("ore").value=(Math.round((km/vascello) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cav_aerea':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/cav_aerea;
+                    var ore = document.getElementById("ore").value=(Math.round((km/cav_aerea) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cav_aerea_vel':
-                    //km percorsi
-                    var km = document.getElementById("km").value= scala_prov * casella;
                     //ore impiegate
-                    var ore = document.getElementById("ore").value= km/cav_aerea_vel;
+                    var ore = document.getElementById("ore").value=(Math.round((km/cav_aerea_vel) * 100) / 100).toFixed(2);
+                    
                     //giorni impiegati
-                    var giorni = (Math.round((ore/8) * 100) / 100).toFixed(2);
-                    document.getElementById("giorni").value= giorni;
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
                 break;
         }
 
     }
     else if (scala==="nazionale"){
+        var km = document.getElementById("km").value= scala_naz * casella;
         switch(mezzo){
-            case 'carovana':
-                //km percorsi
-                var km = document.getElementById("km").value= scala_naz* casella;
-                //ore impiegate
-                var ore = document.getElementById("ore").value= km/carovana;
-                //giorni impiegati
-                document.getElementById("giorni").value=ore/8;
-            break;
-    }
+                case 'carovana':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/carovana) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value = (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    
+                break;
+
+                case 'carrozza':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/carrozza_strada) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_pianura':
+                   //ore impiegate
+                   var ore = document.getElementById("ore").value=(Math.round((km/marcia_pian) * 100) / 100).toFixed(2);
+                    
+                   //giorni impiegati
+                   
+                   document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_collina':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_coll) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_mont_med':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_mont_med) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_mont_alt':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_mont_alt) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cavallo_pianura':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cavallo_pianura) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cavallo_mont_alt':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cavallo_mont_alt) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'piccola_imb':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/piccola_imb) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'vela':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/vela) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'vela_elf':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/vela_elf) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'vascello':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/vascello) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cav_aerea':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cav_aerea) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cav_aerea_vel':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cav_aerea_vel) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+        }
     }
     else{
-        console.log("cont");
+        var km = document.getElementById("km").value= scala_cont * casella;
+        switch(mezzo){
+                case 'carovana':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/carovana) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value = (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    
+                break;
+
+                case 'carrozza':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/carrozza_strada) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_pianura':
+                   //ore impiegate
+                   var ore = document.getElementById("ore").value=(Math.round((km/marcia_pian) * 100) / 100).toFixed(2);
+                    
+                   //giorni impiegati
+                   
+                   document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_collina':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_coll) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_mont_med':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_mont_med) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'marcia_mont_alt':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/marcia_mont_alt) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cavallo_pianura':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cavallo_pianura) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cavallo_mont_alt':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cavallo_mont_alt) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'piccola_imb':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/piccola_imb) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'vela':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/vela) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'vela_elf':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/vela_elf) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'vascello':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/vascello) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cav_aerea':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cav_aerea) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+
+                case 'cav_aerea_vel':
+                    //ore impiegate
+                    var ore = document.getElementById("ore").value=(Math.round((km/cav_aerea_vel) * 100) / 100).toFixed(2);
+                    
+                    //giorni impiegati
+                    
+                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                break;
+        }
     }
 }
+
+
 
