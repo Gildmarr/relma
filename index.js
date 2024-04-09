@@ -22,6 +22,12 @@ const vascello = 7;
 const cav_aerea = 36.3;
 const cav_aerea_vel = 60;
 
+//costo mezzi
+const costoVela = 0.1;
+const costoVelaElfica = 0.2;
+const costoVascello = 1.5;
+const costoCarrozza = 0.01;
+const costoCarovana = 0.10;
 
 
 
@@ -40,6 +46,8 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value = (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoCarovana) * 100) / 100).toFixed(2);
                     
                 break;
 
@@ -50,6 +58,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoCarrozza) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_pianura':
@@ -59,6 +70,7 @@ function calc(){
                    //giorni impiegati
                    
                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                   document.getElementById("costo").value=0;
                 break;
 
                 case 'marcia_collina':
@@ -68,6 +80,7 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'marcia_mont_med':
@@ -77,6 +90,7 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'marcia_mont_alt':
@@ -86,6 +100,7 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'cavallo_pianura':
@@ -95,6 +110,7 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'cavallo_mont_alt':
@@ -104,6 +120,7 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'piccola_imb':
@@ -113,6 +130,7 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'vela':
@@ -122,6 +140,8 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVela) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vela_elf':
@@ -131,6 +151,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVelaElfica) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vascello':
@@ -140,6 +163,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVascello) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cav_aerea':
@@ -149,6 +175,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'cav_aerea_vel':
@@ -158,6 +187,8 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
         }
 
@@ -172,6 +203,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value = (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoCarovana) * 100) / 100).toFixed(2);
                     
                 break;
 
@@ -182,6 +216,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoCarrozza) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_pianura':
@@ -191,6 +228,9 @@ function calc(){
                    //giorni impiegati
                    
                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                   //costo
+                   document.getElementById("costo").value=0;
                 break;
 
                 case 'marcia_collina':
@@ -200,6 +240,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //Costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'marcia_mont_med':
@@ -209,6 +252,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+                    
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'marcia_mont_alt':
@@ -218,6 +264,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'cavallo_pianura':
@@ -227,6 +276,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'cavallo_mont_alt':
@@ -236,6 +288,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'piccola_imb':
@@ -245,6 +300,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'vela':
@@ -254,6 +312,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVela) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vela_elf':
@@ -263,6 +324,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVelaElfica) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vascello':
@@ -272,6 +336,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVascello) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cav_aerea':
@@ -281,6 +348,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //Costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'cav_aerea_vel':
@@ -290,6 +360,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //Costo
+                    document.getElementById("costo").value=0;
                 break;
         }
     }
@@ -303,6 +376,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value = (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoCarovana) * 100) / 100).toFixed(2);
                     
                 break;
 
@@ -313,6 +389,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoCarrozza) * 100) / 100).toFixed(2);
                 break;
 
                 case 'marcia_pianura':
@@ -322,6 +401,9 @@ function calc(){
                    //giorni impiegati
                    
                    document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                   //costo
+                   document.getElementById("costo").value= 0;
                 break;
 
                 case 'marcia_collina':
@@ -331,6 +413,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'marcia_mont_med':
@@ -340,6 +425,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'marcia_mont_alt':
@@ -349,6 +437,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'cavallo_pianura':
@@ -358,6 +449,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value=0;
                 break;
 
                 case 'cavallo_mont_alt':
@@ -367,6 +461,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'piccola_imb':
@@ -376,6 +473,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'vela':
@@ -385,6 +485,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVela) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vela_elf':
@@ -394,6 +497,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVelaElfica) * 100) / 100).toFixed(2);
                 break;
 
                 case 'vascello':
@@ -403,6 +509,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= (Math.round((km*costoVascello) * 100) / 100).toFixed(2);
                 break;
 
                 case 'cav_aerea':
@@ -412,6 +521,9 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
 
                 case 'cav_aerea_vel':
@@ -421,10 +533,24 @@ function calc(){
                     //giorni impiegati
                     
                     document.getElementById("giorni").value= (Math.round((ore/8) * 100) / 100).toFixed(2);
+
+                    //costo
+                    document.getElementById("costo").value= 0;
                 break;
         }
     }
 }
 
 
+//script aggiungere contenuto valore testo
+var i =1 ;
 
+
+function calcolaViaggio(){
+    var km=document.getElementById("km").value;
+    var gg =document.getElementById("giorni").value;
+    var costo=document.getElementById("costo").value;
+    
+    document.getElementById("myTextArea").value+="-----\nParte del viaggio n"+i+"\n-----\nIl viaggio è lungo km: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n\n";
+    i=i+1;
+}

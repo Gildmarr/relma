@@ -53,16 +53,21 @@
             <input type="text" id="ore" name="lname" readonly><br>
             <label for="lname" >Tempo di viaggio in giorni (8h)</label><br>
             <input type="text" id="giorni" name="lname" readonly><br>
+            <label for="lname" >Costo in Monete Oro</label><br>
+            <input type="text" id="costo" name="lname" readonly><br>
             
             
             
             <div class="btn_viaggio">
                 <button id="btn_viaggio" type="button" onclick="calc()";>calcola</button>
+                <button id="aggiungi_step" type="button" onclick="calcolaViaggio()";> aggiungi_step</button>
+                
             </div>
             
            
+            
         </form>
-
+        <textarea id='myTextArea' class=" text_area"></textarea>
     </div>
     
 <script src="index.js"></script>
