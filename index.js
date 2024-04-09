@@ -562,10 +562,15 @@ function resetta(){
     document.getElementById("myTextArea").value="";
     i=1;
 } 
-function textAreaVisible(){
-    
-    
-    
-    
-}
+function download(){
 
+    var data = document.getElementById("myTextArea").value;
+    var blob = new Blob([data], {type: 'text'});
+    var url = URL.createObjectURL(blob);
+    var anchore = document.createElement("a");
+    anchore.href=URL.createObjectURL(blob);
+    anchore.download="viaggio.txt";
+    anchore.click();
+   
+
+}

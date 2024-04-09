@@ -162,7 +162,7 @@ background-color:#53354A;
 
 .text_area{
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 90%;
     height: 200px;
     padding: 5px;
@@ -178,4 +178,18 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#download{
+    background-color: #0a0dd1c9;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#download:hover{
+    background-color:#0a0dd15b;
 }
