@@ -27,7 +27,7 @@
             </select><br>
 
             <label for="fname">Caselle da viaggiare:</label><br>
-            <input type="text" id="caselle" name="fname"><br>
+            <input type="text" pattern="[0-9]*" inputmode="numeric" id="caselle" name="fname"><br>
             
             <label for="mezzo">Tipo di viaggio <br></label>
             <select name="mezzo" id="mezzo">
@@ -68,7 +68,7 @@
                 
             </div>
         </form>
-        <textarea id='myTextArea' class=" text_area" onclick="textAreaVisible()";></textarea>
+        <textarea id='myTextArea' class=" text_area"></textarea>
         <button id="download" type="button" onclick="download()";>Download viaggio</button>
     </div>
     

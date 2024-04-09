@@ -545,7 +545,6 @@ function calc(){
 //script aggiungere contenuto valore testo
 var i =1 ;
 
-
 function calcolaViaggio(){
    
     var km=Math.round(document.getElementById("km").value);
@@ -553,9 +552,11 @@ function calcolaViaggio(){
     var costo=document.getElementById("costo").value;
     var mezzo = document.getElementById("mezzo").value;
     var caselle = document.getElementById("caselle").value;
-    document.getElementById("myTextArea").value+="-----\nStep n: "+i+"\n-----\nCaselle: "+caselle+"\nIl viaggio è lungo km: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n\n";
+    document.getElementById("myTextArea").value+="-----------\nStep n: "+i+"\n-----------\nMezzo: "+mezzo+"\nCaselle: "+caselle+"\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n\n";
     i=i+1;
-  }
+}
+
+
 
 function resetta(){
     
@@ -565,12 +566,18 @@ function resetta(){
 function download(){
 
     var data = document.getElementById("myTextArea").value;
-    var blob = new Blob([data], {type: 'text'});
-    var url = URL.createObjectURL(blob);
-    var anchore = document.createElement("a");
-    anchore.href=URL.createObjectURL(blob);
-    anchore.download="viaggio.txt";
-    anchore.click();
+    if(data === ""){
+        alert("Il viaggio è vuoto");
+    }
+    else{
+        var blob = new Blob([data], {type: 'text'});
+        var url = URL.createObjectURL(blob);
+        var anchore = document.createElement("a");
+        anchore.href=URL.createObjectURL(blob);
+        anchore.download="viaggio.txt";
+        anchore.click();
+       
+    }
    
 
 }

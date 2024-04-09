@@ -138,6 +138,7 @@ background-color:#53354A;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 10px;
+    margin-right: 1px;
     
    
 }
@@ -153,6 +154,7 @@ background-color:#53354A;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 10px;
+    margin-left: 1px;
     
 }
 #reset:hover{
