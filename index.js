@@ -547,10 +547,19 @@ var i =1 ;
 
 
 function calcolaViaggio(){
-    var km=document.getElementById("km").value;
-    var gg =document.getElementById("giorni").value;
+   
+    var km=Math.round(document.getElementById("km").value);
+    var gg = Math.round(document.getElementById("giorni").value);
     var costo=document.getElementById("costo").value;
-    
-    document.getElementById("myTextArea").value+="-----\nParte del viaggio n"+i+"\n-----\nIl viaggio è lungo km: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n\n";
+    var mezzo = document.getElementById("mezzo").value;
+    var caselle = document.getElementById("caselle").value;
+    document.getElementById("myTextArea").value+="-----\nStep n: "+i+"\n-----\nCaselle: "+caselle+"\nIl viaggio è lungo km: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n\n";
     i=i+1;
-}
+  }
+
+function resetta(){
+    
+    document.getElementById("myTextArea").value="";
+    i=1;
+} 
+

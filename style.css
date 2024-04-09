@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .nav{
     width: 100%;
@@ -78,6 +79,7 @@ label{
     font-style: italic;
     font-size: 0.9rem;
 }
+
 form select{
     margin-bottom: 5px;
     background-color: #caafc19a;
@@ -123,23 +125,37 @@ background-color:#53354A;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
-.btn_viaggio #aggiungi_step{
-    background-color: #251821cc;
-    width: 120px;
+#aggiungi_step{
+    background-color: #13360e;
+    width: 100px;
     height: 40px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 10px;
-    margin-bottom: 10px;
-    border: #2518218e solid 3px;
+    
+   
 }
-.btn_viaggio #aggiungi_step:hover{
-    background-color: #2e8023;
+#aggiungi_step:hover{
+    background-color: #21b65f86;
+}
+#reset{
+    background-color: #af2b2b;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+#reset:hover{
+    background-color:#f86262b0 ;
 }
 
 
@@ -148,4 +164,16 @@ background-color:#53354A;
     margin-bottom: 20px;
     width: 90%;
     height: 200px;
+}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    width: 99%;
+}
+.steps{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
