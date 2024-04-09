@@ -1,7 +1,8 @@
 //scale in km
 const scala_prov = 1.5;
 const scala_naz = 9;
-const scala_cont = 90;
+const scala_cont = 30;
+const scala_mond = 90;
 
 
 
