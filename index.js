@@ -564,7 +564,7 @@ function resetta(){
     i=1;
 } 
 function download(){
-
+ 
     var data = document.getElementById("myTextArea").value;
     if(data === ""){
         alert("Il viaggio è vuoto");
