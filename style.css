@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     
 }
 .nav{
@@ -41,7 +42,7 @@ body{
     align-items: center;
     margin-top: 10px;
     width: 92%;
-    height: auto;
+    height: 100%;
     background-color: white;
     border-radius: 15px;
     border: 2px solid black ;
@@ -130,7 +131,7 @@ background-color:#53354A;
 
 #aggiungi_step{
     background-color: #13360e;
-    width: 100px;
+    width: 90px;
     height: 40px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -145,7 +146,7 @@ background-color:#53354A;
 }
 #reset{
     background-color: #af2b2b;
-    width: 100px;
+    width: 90px;
     height: 40px;
     color: white;
     font-family: 'Courier New', Courier, monospace;

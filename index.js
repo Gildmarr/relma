@@ -562,4 +562,10 @@ function resetta(){
     document.getElementById("myTextArea").value="";
     i=1;
 } 
+function textAreaVisible(){
+    
+    
+    
+    
+}
 
