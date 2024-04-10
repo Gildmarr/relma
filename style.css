@@ -166,6 +166,7 @@ background-color:#53354A;
     width: 90%;
     height: 200px;
     padding: 5px;
+    overflow:scroll;
 }
 
 hr{
