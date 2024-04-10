@@ -23,12 +23,13 @@
         <form>
             <label for="scala">Scala<br></label>
             <select name="scala" id="scala">
-              <option value="nazionale">Nazionale</option>
               <option value="provinciale">Provinciale</option>
+              <option value="nazionale">Nazionale</option>
+              <option value="topografica">Topografica</option>
               <option value="continentale">Continentale</option>
             </select><br>
 
-            <label for="fname">Caselle da viaggiare:</label><br>
+            <label for="fname">Caselle da percorrere:</label><br>
             <input type="text" pattern="[0-9]*" inputmode="numeric" id="caselle" name="fname"><br>
             
             <label for="mezzo">Tipo di viaggio <br></label>
@@ -47,12 +48,15 @@
               <option value="cav_aerea">Caval. aerea</option>
               <option value="cav_aerea_vel">Caval. aerea veloce</option>
             </select><br>
+            <!--Partenza e arrivo-->
+           
+            <!---------------------->
             
-            <label for="lname" >Km percorsi</label><br>
+            <label for="lname" >Km totali</label><br>
             <input type="text" id="km" name="lname" readonly><br>
-            <label for="lname" >Tempo di viaggio in ore</label><br>
+            <label for="lname" >Ore di viaggio</label><br>
             <input type="text" id="ore" name="lname" readonly><br>
-            <label for="lname" >Tempo di viaggio in giorni (8h)</label><br>
+            <label for="lname" >Giorni di viaggio (8h)</label><br>
             <input type="text" id="giorni" name="lname" readonly><br>
             <label for="lname" >Costo in Monete Oro</label><br>
             <input type="text" id="costo" name="lname" readonly><br>
@@ -72,8 +76,14 @@
         </div>
         <div class="conteiner_sec_2">
             <textarea id='myTextArea' class=" text_area"></textarea>
+        <!-- bottoni aggiuntivi per versione desktop-->
+        <div class="conteiner_sec_2_btn">
         <button id="download" type="button" onclick="download()";>Download viaggio</button>
-        </div>
+        <button id="aggiungi_step" type="button" onclick="calcolaViaggio()";>aggiungi step</button>
+        <button id="reset" type="button" onclick="resetta()";>Reset viaggio</button>
+        </div> 
+        <!-- bottoni aggiuntivi per versione desktop-->   
+    </div>
         
         
     </div>

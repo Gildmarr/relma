@@ -121,8 +121,8 @@ form #caselle:hover{
 background-color:#53354A;
 }
 .btn_viaggio{
-    height: auto;
-    width: 100%;
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,9 +139,7 @@ background-color:#53354A;
     font-weight: bold;
     border-radius: 10px;
     margin-right: 1px;
-    
-   
-}
+    }
 #aggiungi_step:hover{
     background-color: #21b65f86;
 }
@@ -202,17 +200,30 @@ hr{
     
     width: 90%;
 }
+.conteiner_sec_2_btn{
+    display: flex;
+}
+.conteiner_sec_2 #aggiungi_step{
+    display: none;
+}
+.conteiner_sec_2 #reset{
+    display: none;
+}
+
+
 @media (min-width:680px){
     body{
         width: auto;
         height: 100vh;  
         margin: 0;
         padding: 0;   
+       
     }
     .selection1{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 40px;
         padding: 0px;
         margin: 0;
@@ -231,4 +242,25 @@ hr{
     .titolo1{
         display: none;
     }
+    .conteiner_sec_2 #aggiungi_step{
+        display: block;
+    }
+    .conteiner_sec_2 #reset{
+        display: block;
+    }
+    #aggiungi_step, #reset{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+   .steps{
+    display: none;
+   }
+   .btn_viaggio{
+    height: auto;
+   }
+   .selection1{
+    padding-left: 10px;
+   }
 }
