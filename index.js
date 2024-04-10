@@ -736,7 +736,7 @@ function calcolaViaggio(){
     var costo=document.getElementById("costo").value;
     var mezzo = document.getElementById("mezzo").value;
     var caselle = document.getElementById("caselle").value;
-    document.getElementById("myTextArea").value+="--------------------\nPartenza da:\nArrivo a:\n--------------------\nMezzo: "+mezzo+"\nCaselle: "+caselle+"\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n\n";
+    document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera MO: "+costo+"\n------------------------------\n\n";
     i=i+1;
 }
 
