@@ -58,6 +58,24 @@ body{
     color: white;
 
 }
+#caselle{
+    width: 190px;
+}
+.cas_input{
+    margin-bottom: 5px;
+    background-color: #caafc19a;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    border: solid 2px rgba(0, 0, 0, 0.74);
+    width: 200px;
+    font-weight: bold;
+}
+.cas_input:hover{
+    background-color:rgba(245, 222, 179, 0.329);
+    border: #53354A 2px solid;
+}
+
 input{
     padding: 2px;
     margin-bottom: 10px;
@@ -81,31 +99,6 @@ label{
     font-size: 0.9rem;
 }
 
-form select{
-    margin-bottom: 5px;
-    background-color: #caafc19a;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    padding: 3px;
-    border: solid 2px rgba(0, 0, 0, 0.74);
-    width: 200px;
-    font-weight: bold;
-   }
-form select:hover{
-    background-color:rgba(245, 222, 179, 0.329);
-    border: #53354A 2px solid;
-}
-
-form #caselle{
-    background-color: #caafc194 ;
-    border: solid 2px rgba(0, 0, 0, 0.74);
-    color: black;
-    
-}
-form #caselle:hover{
-    background-color:rgba(245, 222, 179, 0.329);
-    border: #53354A 2px solid;
-}
 #btn_viaggio{
     background-color: #080a2086;
     width: 100px;
@@ -121,8 +114,6 @@ form #caselle:hover{
 background-color:#53354A;
 }
 .btn_viaggio{
-    
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,22 +144,17 @@ background-color:#53354A;
     font-weight: bold;
     border-radius: 10px;
     margin-left: 1px;
-    
 }
 #reset:hover{
     background-color:#f86262b0 ;
 }
-
-
 .text_area{
     border-radius: 10px;
     margin-bottom: 10px;
     width: 100%;
     height: 400px;
     padding: 5px;
-    
 }
-
 hr{
     border: 1px solid rgba(255, 255, 255, 0.616);
     width: 99%;
@@ -198,7 +184,6 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     width: 90%;
 }
 .conteiner_sec_2_btn{
@@ -213,6 +198,9 @@ hr{
 
 
 @media (min-width:680px){
+    .conteiner_sec_1{
+        width: 900px;
+    }
     body{
         width: auto;
         height: 100vh;  
@@ -228,6 +216,7 @@ hr{
         gap: 40px;
         padding: 0px;
         margin: 0;
+        
     }
     .conteiner_sec_2{
         display: flex;
