@@ -291,9 +291,9 @@ function calcolaViaggio(){
     var caselle = document.getElementById("caselle").value;
     var scala=document.getElementById("scala").value;
 
-    costoTotale = costoTotale+parseFloat(costo);
+    costoTotale = Math.round((costoTotale+parseFloat(costo))*10)/10;
     kmTotali=kmTotali+parseInt(km);
-    giorniTotali=giorniTotali+gg;
+    giorniTotali=Math.round((giorniTotali+gg)*10)/10;
 
     if(caselle==="" || km === 0){
         alert("controllare campi inseriti")
