@@ -276,41 +276,32 @@ function calc(){
         }
     }
 
-    
-
-
-
-
-
-
-
 //script aggiungere contenuto valore testo
-
 
 function calcolaViaggio(){
    
     var km=Math.round(document.getElementById("km").value);
-    var gg = Math.round(document.getElementById("giorni").value);
+    var gg = Math.round((document.getElementById("giorni").value)*10)/10;
     var costo=document.getElementById("costo").value;
     var mezzo = document.getElementById("mezzo").value;
     var caselle = document.getElementById("caselle").value;
+    var scala=document.getElementById("scala").value;
     if(mezzo==="vascello" || mezzo ==="vela" || mezzo==="vela_elf" || mezzo==="peschereccio" || mezzo === "pallone_aereo"){
-        document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"\nKM: "+km+ "\nViaggerete per gg(24h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
+        document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"  ("+scala+")\nKM: "+km+ "\nViaggerete per gg(24h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
     }
     else{
-        document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
+        document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+" ("+scala+")\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
     }
   
     
 }
-
-
 
 function resetta(){
     
     document.getElementById("myTextArea").value="";
     
 } 
+
 function download(){
  
     var data = document.getElementById("myTextArea").value;
