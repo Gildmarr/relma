@@ -293,7 +293,7 @@ function calcolaViaggio(){
 
     costoTotale = costoTotale+parseFloat(costo);
     kmTotali=kmTotali+parseInt(km);
-    giorniTotali=giorniTotali+parseFloat(gg);
+    giorniTotali=giorniTotali+gg;
 
     if(caselle===""){}
     else{
@@ -314,7 +314,7 @@ function calcoloFinale(){
         
     }
     else{
-        document.getElementById("myTextArea").value+="Il costo totale del viaggio e': "+costoTotale+" MO\nI km totali di viaggio sono: "+kmTotali+"\nI giorni totali di viaggio sono: "+giorniTotali+"\n\n\n";
+        document.getElementById("myTextArea").value+="COSTO TOTALE:: "+costoTotale+" MO\nKM TOTALI: "+kmTotali+"\nGIORNI TOTALI: "+giorniTotali+"\n\n\n";
     }
     
 }
@@ -323,6 +323,8 @@ function resetta(){
     
     document.getElementById("myTextArea").value="";
     costoTotale=0;
+    kmTotali=0;
+    giorniTotali=0;
     
 } 
 
