@@ -295,7 +295,9 @@ function calcolaViaggio(){
     kmTotali=kmTotali+parseInt(km);
     giorniTotali=giorniTotali+gg;
 
-    if(caselle===""){}
+    if(caselle==="" || km === 0){
+        alert("controllare campi inseriti")
+    }
     else{
         if(mezzo==="vascello" || mezzo ==="vela" || mezzo==="vela_elf" || mezzo==="peschereccio" || mezzo === "pallone_aereo"){
             document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"  ("+scala+")\nKM: "+km+ "\nViaggerete per gg(24h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
@@ -310,7 +312,7 @@ function calcolaViaggio(){
 
 //calcoli per il bottone Calcolo totale
 function calcoloFinale(){
-    if(document.getElementById("caselle").value===""){
+    if(document.getElementById("caselle").value==="" || document.getElementById("myTextArea").value===""){
         
     }
     else{
