@@ -314,7 +314,7 @@ function calcoloFinale(){
         
     }
     else{
-        document.getElementById("myTextArea").value+="COSTO TOTALE:: "+costoTotale+" MO\nKM TOTALI: "+kmTotali+"\nGIORNI TOTALI: "+giorniTotali+"\n\n\n";
+        document.getElementById("myTextArea").value+="COSTO TOTALE: "+costoTotale+" MO\nKM TOTALI: "+kmTotali+"\nGIORNI TOTALI: "+giorniTotali+"\n\n\n";
     }
     
 }
