@@ -40,25 +40,26 @@ function calc(){
     var casella = document.getElementById("caselle").value;
     var scala = document.getElementById("scala").value;
     var mezzo = document.getElementById("mezzo").value;
-    if(scala=="provinciale"){
-        calcoloCompleto(scala_prov,mezzo,casella);
+    if (casella===""){}
+    else{
+        if(scala=="provinciale"){
+            calcoloCompleto(scala_prov,mezzo,casella);
+        }
+        else if(scala=="nazionale"){
+            calcoloCompleto(scala_naz,mezzo,casella);
+        }
+        else if(scala=="topografica"){
+            calcoloCompleto(scala_topo,mezzo,casella);
+        }
+        else if(scala=="continentale"){
+            calcoloCompleto(scala_cont,mezzo,casella);
+        }
     }
-    else if(scala=="nazionale"){
-        calcoloCompleto(scala_naz,mezzo,casella);
-    }
-    else if(scala=="topografica"){
-        calcoloCompleto(scala_topo,mezzo,casella);
-    }
-    else if(scala=="continentale"){
-        calcoloCompleto(scala_cont,mezzo,casella);
-    }
+ 
 }
 
     //funzione per i calcoli di tutti i mezzi
     function calcoloCompleto(scala,mezzo,casella){
-        console.log(scala);
-        console.log(casella);
-        console.log(mezzo);
         var km = document.getElementById("km").value= scala * casella;
         console.log(km);
         switch(mezzo){
@@ -277,28 +278,51 @@ function calc(){
     }
 
 //script aggiungere contenuto valore testo
+var costoTotale=0;
+var kmTotali=0;
+var giorniTotali=0;
 
 function calcolaViaggio(){
-   
+    
     var km=Math.round(document.getElementById("km").value);
     var gg = Math.round((document.getElementById("giorni").value)*10)/10;
     var costo=document.getElementById("costo").value;
     var mezzo = document.getElementById("mezzo").value;
     var caselle = document.getElementById("caselle").value;
     var scala=document.getElementById("scala").value;
-    if(mezzo==="vascello" || mezzo ==="vela" || mezzo==="vela_elf" || mezzo==="peschereccio" || mezzo === "pallone_aereo"){
-        document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"  ("+scala+")\nKM: "+km+ "\nViaggerete per gg(24h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
+
+    costoTotale = costoTotale+parseFloat(costo);
+    kmTotali=kmTotali+parseInt(km);
+    giorniTotali=giorniTotali+parseFloat(gg);
+
+    if(caselle===""){}
+    else{
+        if(mezzo==="vascello" || mezzo ==="vela" || mezzo==="vela_elf" || mezzo==="peschereccio" || mezzo === "pallone_aereo"){
+            document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+"  ("+scala+")\nKM: "+km+ "\nViaggerete per gg(24h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
+        }
+        else{
+            document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+" ("+scala+")\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
+        }
+    }
+   
+
+}
+
+//calcoli per il bottone Calcolo totale
+function calcoloFinale(){
+    if(document.getElementById("caselle").value===""){
+        
     }
     else{
-        document.getElementById("myTextArea").value+="Partenza da:\nArrivo a:\nMezzo: "+mezzo+"\nCaselle: "+caselle+" ("+scala+")\nKM: "+km+ "\nViaggerete per gg(8h): "+gg+ "\nVi costera' MO: "+costo+"\n------------------------------\n\n";
+        document.getElementById("myTextArea").value+="Il costo totale del viaggio e': "+costoTotale+" MO\nI km totali di viaggio sono: "+kmTotali+"\nI giorni totali di viaggio sono: "+giorniTotali+"\n\n\n";
     }
-  
     
 }
 
 function resetta(){
     
     document.getElementById("myTextArea").value="";
+    costoTotale=0;
     
 } 
 
