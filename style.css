@@ -308,8 +308,6 @@ button{
 
 }
 
-
-
 .selezione{
     width: 40%;
     height: 90%;
@@ -359,6 +357,16 @@ button{
     width: 90%;
     border-radius: 10px;
 
+}
+.genera-btn{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: roboto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: greenyellow ;
+    color: black;
 }
 /*FINE SEZIONE GENERATORE FLORA******************************************************/
 @media (min-width:680px){
