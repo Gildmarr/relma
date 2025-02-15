@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relma Adventures</title>
+    <link rel="stylesheet" type="text/css" href="view/css/calcolatoreViaggio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- SEZIONE HEADER    -->
+    <div class="nav">
+
+        <div class="titolo">
+            <a href="./index.html">
+                <h1 class="title">DM tool</h1>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <img src="view/images/icons8-menu-100.png" width="30px" height="30px" id="hamburger">
+        </div>
+    </div>
+    <div class="menu-mobile">
+        <img src="view/images/close.png" alt="" width="30px" class="close-icon">
+        <h2><a href="index.html">Calcolatore viaggio</a></h2>
+        <h2><a href="view/html/generatoreFauna.html">Generatore Fauna</a></h2>
+    </div>
+    <!-- SEZIONE HEADER    -->
+
+
+    <div class="selection1">
+        <h3 class="titolo1">Calcolo Viaggio</h3>
+        <div class="continer_sec_1">
+
+
+            <form>
+                <label for="scala">Scala<br></label>
+                <select name="scala" id="scala" class="cas_input">
+                    <option value="provinciale">Provinciale (1.5km)</option>
+                    <option value="nazionale">Nazionale (9km)</option>
+                    <option value="topografica">Topografica (30km)</option>
+                    <option value="continentale">Continentale (90km)</option>
+                </select><br>
+
+                <label for="fname">Caselle da percorrere:</label><br>
+                <input type="text" pattern="[0-9]*" inputmode="numeric" id="caselle" name="fname" class="cas_input"><br>
+
+                <label for="mezzo">Tipo di viaggio <br></label>
+                <select name="mezzo" id="mezzo" class="cas_input">
+                    <option value="carovana">Carovana</option>
+                    <option value="carrozza">Carrozza su strada</option>
+                    <option value="marcia_pianura">Marcia in pianura</option>
+                    <option value="marcia_collina">Marcia in collina</option>
+                    <option value="marcia_mont_med">Marcia media montagna</option>
+                    <option value="marcia_mont_alt">Marcia alta montagna</option>
+                    <option value="cavallo_pianura">Cavallo in pianura</option>
+                    <option value="cavallo_mont_med">Cavallo media montagna</option>
+                    <option value="canoa_up">Canoa (upstream)</option>
+                    <option value="canoa_no">Canoa (no current)</option>
+                    <option value="canoa_down">Canoa (downstream)</option>
+                    <option value="vela">Vela</option>
+                    <option value="vela_elf">Vela elfica</option>
+                    <option value="peschereccio">Peschereccio</option>
+                    <option value="vascello">Vascello</option>
+                    <option value="pallone_aereo">Pallone Aereostatico</option>
+                    <option value="cav_aerea_pic">Caval. aerea piccola</option>
+                    <option value="cav_aerea_med">Caval. aerea media</option>
+                    <option value="cav_aerea_gr">Caval. aerea grande</option>
+                    <option value="piccolo_volatile">Piccolo volatile</option>
+                    <option value="piccione_viaggiatore">Piccione viaggiatore</option>
+                </select><br>
+                <!--Partenza e arrivo-->
+
+                <!---------------------->
+
+                <label for="lname">Km totali</label><br>
+                <input type="text" id="km" name="lname" readonly><br>
+                <label for="lname">Ore di viaggio<a href="info.html" class="info-btn">info</a>
+                </label><br>
+                <input type="text" id="ore" name="lname" readonly><br>
+                <label for="lname">Giorni di viaggio </label><br>
+                <input type="text" id="giorni" name="lname" readonly><br>
+                <label for="lname">Costo in Monete Oro</label><br>
+                <input type="text" id="costo" name="lname" readonly><br>
+
+
+
+                <div class="btn_viaggio">
+                    <button id="btn_viaggio" type="button" onclick="calc()" ;>calcola</button>
+                    <hr>
+                    <div class="steps">
+                        <button id="aggiungi_step" type="button" onclick="calcolaViaggio()" ;>aggiungi step</button>
+                        <button id="reset" type="button" onclick="resetta()" ;>Reset viaggio</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="conteiner_sec_2">
+            <textarea id='myTextArea' class=" text_area"></textarea>
+            <!-- bottoni aggiuntivi per versione desktop-->
+            <div class="conteiner_sec_2_btn">
+                <button id="aggiungi_step" type="button" onclick="calcolaViaggio()" ;>aggiungi step</button>
+                <button id="reset" type="button" onclick="resetta()" ;>Reset viaggio</button>
+                <button id="calcola_tot" type="button" onclick="calcoloFinale()" ;>Calcola totale</button>
+                <button id="download" type="button" onclick="download()" ;>Download viaggio</button>
+
+
+            </div>
+            <!-- bottoni aggiuntivi per versione desktop-->
+        </div>
+
+
+    </div>
+
+    <script src="view/js/index.js"></script>
+    <script src="view/js/mobile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #53354A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SEZIONE HEADER*/
+.nav {
+    width: 100%;
+    background-color: #E84545;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 2px #2B2E4A;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "MedievalSharp";
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: #2B2E4A;
+}
+
+.menu-mobile {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-mobile a {
+    font-family: roboto;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-mobile li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.menu-mobile ul {
+    padding-bottom: 10px;
+}
+
+/*FINE SEZIONE HEADER*/
+
+
+
+/*INIZIO SEZIONE CALCOLO VIAGGIO*/
+.selection1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/relma.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 92%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+
+}
+
+.titolo1 {
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: white;
+
+}
+
+#caselle {
+    width: 190px;
+}
+
+.cas_input {
+    margin-bottom: 5px;
+    background-color: #caafc19a;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    border: solid 2px rgba(0, 0, 0, 0.74);
+    width: 200px;
+    font-weight: bold;
+}
+
+.cas_input:hover {
+    background-color: rgba(245, 222, 179, 0.329);
+    border: #53354A 2px solid;
+}
+
+input {
+    padding: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #53354ac0;
+    border: solid 2px #E84545;
+    color: white;
+    width: 190px;
+    font-weight: bold;
+
+}
+
+input:hover {
+    background-color: #251821;
+}
+
+label {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+#btn_viaggio {
+    background-color: #080a2086;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#btn_viaggio:hover {
+    background-color: #53354A;
+}
+
+.btn_viaggio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aggiungi_step {
+    background-color: #13360e;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+#aggiungi_step:hover {
+    background-color: #21b65f86;
+}
+
+#reset {
+    background-color: #af2b2b;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+#reset:hover {
+    background-color: #f86262b0;
+}
+
+.text_area {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    width: 99%;
+}
+
+.steps {
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download {
+    background-color: #0a0dd1c9;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+#download:hover {
+    background-color: #0a0dd15b;
+}
+
+button {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#calcola_tot {
+    background-color: #149e14c9;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+#calcola_tot:hover {
+    background-color: #149e1463;
+}
+
+.conteiner_sec_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.conteiner_sec_2_btn {
+    display: flex;
+}
+
+.conteiner_sec_2 #aggiungi_step {
+    display: none;
+}
+
+.conteiner_sec_2 #reset {
+    display: none;
+}
+
+.info-btn {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 60px;
+    background-color: rgba(230, 15, 15, 0.434);
+    border-radius: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.info-btn:hover {
+    background-color: rgba(230, 15, 15, 0.717);
+
+}
+
+/*MEDIA QUERIES ********************************************************/
+
+
+@media (min-width:680px) {
+    .conteiner_sec_1 {
+        width: 900px;
+    }
+
+    body {
+        width: auto;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .selection1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0px;
+        margin: 0;
+
+    }
+
+    .conteiner_sec_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90%;
+        width: 600px;
+    }
+
+    #myTextArea {
+        height: 90%;
+        width: 90%;
+    }
+
+    .titolo1 {
+        display: none;
+    }
+
+    .conteiner_sec_2 #aggiungi_step {
+        display: block;
+    }
+
+    .conteiner_sec_2 #reset {
+        display: block;
+    }
+
+    #aggiungi_step,
+    #reset {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .steps {
+        display: none;
+    }
+
+    .btn_viaggio {
+        height: auto;
+    }
+
+    .selection1 {
+        padding-left: 10px;
+    }
+
+
+}

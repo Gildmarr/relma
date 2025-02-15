@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #53354A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SEZIONE HEADER*/
+.nav {
+    width: 100%;
+    background-color: #E84545;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 2px #2B2E4A;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "MedievalSharp";
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: #2B2E4A;
+}
+
+.menu-mobile {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-mobile a {
+    font-family: roboto;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-mobile li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.menu-mobile ul {
+    padding-bottom: 10px;
+}
+
+/*FINE SEZIONE HEADER*/
+
+
+/*INIZIO SEZIONE GENERATORE FLORA******************************************************/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/relma.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-work {
+    text-align: center;
+
+}
+
+.container-calcoli {
+    margin-top: 50px;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(10, 0, 0, 0.295);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+
+}
+
+.selezione {
+    width: 40%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-selezione {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container-selezione label {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.input-selezioni {
+    background-color: rgb(108, 169, 238);
+    margin-bottom: 10px;
+    height: 10%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.risultato {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.risultato textarea {
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+.genera-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: roboto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: greenyellow;
+    color: black;
+}
+
+/*MEDIA QUERY FAUNA*/
+@media (max-width:680px) {
+    .hero {
+        height: 1000px;
+
+    }
+
+    .container-calcoli {
+        margin-bottom: 200px;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .selezione {
+        height: 100%;
+        width: 100%;
+    }
+
+    .input-selezioni {
+        margin-bottom: 5;
+        height: 50px;
+    }
+
+    .risultato {
+        width: 90%;
+    }
+}
